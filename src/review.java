@@ -1,12 +1,20 @@
+import com.opencsv.bean.CsvBindByPosition;
 
 public class review {
 
+	@CsvBindByPosition(position = 0)
 	private String ReviewTitle;
+	@CsvBindByPosition(position = 1)
 	private String ReviewText;
+	@CsvBindByPosition(position = 2)
 	private int wordcount;	
+	@CsvBindByPosition(position = 3)
 	private String titleSentiment;	
+	@CsvBindByPosition(position = 4)
 	private String textSentiment;	
+	@CsvBindByPosition(position = 5)
 	private int StarRating;	
+	@CsvBindByPosition(position = 6)
 	private float sentimentValue;
 	
 	public review() {
